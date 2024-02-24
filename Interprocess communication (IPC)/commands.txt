@@ -1,0 +1,11 @@
+cat commands.txt
+ls -i
+echo abcde
+date
+whoami
+pwd
+who
+ps -ef
+whatis cp
+tty
+uname
