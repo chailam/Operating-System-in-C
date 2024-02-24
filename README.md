@@ -1,5 +1,5 @@
 # Operating-System-in-C
-Operating System Unit to Code in C
+Operating System Unit to Code in C which includes Basic Command Line Interface(CLI), Inter Process Communication (IPC) and Processor Scheduling Simulation in C.
 
 ## Basic Command Line Interface (CLI) Implementation in C
 
@@ -58,6 +58,46 @@ $ ./socket_client < commands.txt
 client: echo abcde   
 server: abcde   
 ```
+<br>
 
+---
+<br>
 
+## Processor Scheduling Simulation in C
+
+### Overview
+Processor scheduling aims to assign processes to be executed by the processor (or processors) to achieve certain operating system objectives such as response time, turnaround time, throughput, and processor efficiency. Scheduling algorithms play a crucial role in determining which process should wait and which process should proceed for execution, thereby affecting the overall system performance.    
+
+This task focuses on implementing and simulating the performance of three different scheduling algorithms and observing their effects on system performance. For simplicity, these scheduling algorithms are assumed to be applied only on a uniprocessor system.
+
+### Task 1: First-Come-First-Served Scheduling (FCFS)
+In the first task, it implements the simplest scheduling algorithm based on the first-come-first-served (FCFS) approach. With FCFS, the process that first arrives in the Ready queue is the first to be allocated the processor for execution. This is a non-preemptive algorithm.
+
+### Task 2: Round Robin Scheduling (RR)
+For the second task, it implements a preemptive scheduling algorithm based on the Round Robin (RR) approach. Processes in the Ready queue are still scheduled on a first-come-first-served basis, but each process is assigned a fixed time quantum for execution. Upon the time quantum's expiration, the currently running process is preempted and placed at the end of the Ready queue. This continues until all jobs complete execution.    
+(For this task, the time quantum is set to 2 seconds.)
+
+### Task 3: Shortest Remaining Time Scheduling (SRT)
+The third scheduling algorithm it implements is based on the Shortest Remaining Time (SRT) concept. The scheduler always chooses the process with the shortest expected remaining processing time. If a new process arrives with a shorter remaining time than the currently running process, the scheduler may preempt the running process and promote the new one for execution.    
+If two processes share the same shortest remaining processing time, FCFS is used to break the tie.
+
+### Instructions:
+1. Compile the C code
+2. For each program implemented for the tasks below, it should take an input file as a command line input.
+3.  The input file should have the following structure:    
+- The first column contains the process ID
+- The second column indicates the arrival time (in seconds) of each process in the Ready queue
+- The last column refers to the total processing time (in seconds) required for the corresponding process.    
+<small>Assume these processes are batch jobs and are processor-bound only (no I/O operations involved). </small>
+
+4. Sample content of the input file as below:
+
+| Process | Arrival Time | Processing Time |
+|---------|--------------|-----------------|
+| P1      | 0            | 3               |
+| P2      | 1            | 6               |
+| P3      | 4            | 4               |
+| P4      | 6            | 2               |
+
+The sample command input file is `processes<n>.txt`, where `<n>` represents `1`, `2`, `3`.
 
