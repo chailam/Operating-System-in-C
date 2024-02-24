@@ -1,7 +1,7 @@
 # Operating-System-in-C
 Operating System Unit to Code in C which includes Basic Command Line Interface(CLI), Inter Process Communication (IPC) and Processor Scheduling Simulation in C.
 
-## Basic Command Line Interface (CLI) Implementation in C
+## A. Basic Command Line Interface (CLI) Implementation in C
 
 ### Overview
 The objective of this task is to implement a reduced version of a Command Line Interface (CLI) program, resembling the functionality of a Unix/Linux shell. The program will be developed using the C programming language and will incorporate essential Unix commands.
@@ -28,7 +28,7 @@ The basic CLI program capable of performing the following functions using specif
 
 <br>
 
-## Interprocess communication (IPC) Implementation in C
+## B. Interprocess communication (IPC) Implementation in C
 
 ### Overview
 This task focuses on implementing a clientserver model in Unix utilizing three distinct mechanisms Named Pipes (FIFO), Message Queues, and Unix Sockets. Each mechanism requires the implementation of both server and client programs to facilitate communication.
@@ -63,7 +63,7 @@ server: abcde
 ---
 <br>
 
-## Processor Scheduling Simulation in C
+## C. Processor Scheduling Simulation in C
 
 ### Overview
 Processor scheduling aims to assign processes to be executed by the processor (or processors) to achieve certain operating system objectives such as response time, turnaround time, throughput, and processor efficiency. Scheduling algorithms play a crucial role in determining which process should wait and which process should proceed for execution, thereby affecting the overall system performance.    
