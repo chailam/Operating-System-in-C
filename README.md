@@ -1,5 +1,9 @@
 # Operating-System-in-C
-Operating System Unit to Code in C which includes Basic Command Line Interface(CLI), Inter Process Communication (IPC) and Processor Scheduling Simulation in C.
+Operating System Unit to Code in C which includes 
+- [Basic Command Line Interface (CLI) Implementation in C](#a-basic-command-line-interface-cli-implementation-in-c)
+- [Interprocess communication (IPC) Implementation in C](#b-interprocess-communication-ipc-implementation-in-c)
+- [Processor Scheduling Simulation in C](#c-processor-scheduling-simulation-in-c)
+
 
 ## A. Basic Command Line Interface (CLI) Implementation in C
 
