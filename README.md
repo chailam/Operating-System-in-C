@@ -10,6 +10,8 @@ Operating System Unit to Code in C which includes
 ### Overview
 The objective of this task is to implement a reduced version of a Command Line Interface (CLI) program, resembling the functionality of a Unix/Linux shell. The program will be developed using the C programming language and will incorporate essential Unix commands.
 
+The code is in folder `Basic Command Line Interface (CLI) `.
+
 The basic CLI program capable of performing the following functions using specific commands has been implemented:
 
 | Command      | Description                                                                                                           |
@@ -37,6 +39,7 @@ The basic CLI program capable of performing the following functions using specif
 ### Overview
 This task focuses on implementing a clientserver model in Unix utilizing three distinct mechanisms Named Pipes (FIFO), Message Queues, and Unix Sockets. Each mechanism requires the implementation of both server and client programs to facilitate communication.
 
+The code is in folder `Interprocess communication (IPC) `.
 
 #### Task 1 Named Pipes (FIFO)
 Implement the named pipe mechanism, also known as the first-in-first-out (FIFO) device. The server program creates a new named pipe to share with the client program, allowing the server to receive and execute Unix commands sent by the client through the same named pipe.
@@ -73,6 +76,8 @@ server: abcde
 Processor scheduling aims to assign processes to be executed by the processor (or processors) to achieve certain operating system objectives such as response time, turnaround time, throughput, and processor efficiency. Scheduling algorithms play a crucial role in determining which process should wait and which process should proceed for execution, thereby affecting the overall system performance.    
 
 This task focuses on implementing and simulating the performance of three different scheduling algorithms and observing their effects on system performance. For simplicity, these scheduling algorithms are assumed to be applied only on a uniprocessor system.
+
+The code is in folder `Processor Scheduling Simulation `.
 
 ### Task 1: First-Come-First-Served Scheduling (FCFS)
 In the first task, it implements the simplest scheduling algorithm based on the first-come-first-served (FCFS) approach. With FCFS, the process that first arrives in the Ready queue is the first to be allocated the processor for execution. This is a non-preemptive algorithm.
